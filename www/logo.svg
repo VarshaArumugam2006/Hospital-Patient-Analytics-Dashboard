@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Shield / Squircle -->
+  <rect x="10" y="10" width="180" height="180" rx="44" fill="url(#bgGrad)" stroke="#38bdf8" stroke-width="3" stroke-opacity="0.4"/>
+
+  <!-- Medical Cross Base -->
+  <path d="M 82 45 H 118 V 78 H 155 V 114 H 118 V 155 H 82 V 114 H 45 V 78 H 82 Z" 
+        fill="url(#crossGrad)" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- Analytics Line / Heartbeat Pulse Overlay -->
+  <path d="M 35 102 L 65 102 L 80 125 L 98 62 L 115 138 L 132 88 L 144 102 L 165 102" 
+        fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <path d="M 35 102 L 65 102 L 80 125 L 98 62 L 115 138 L 132 88 L 144 102 L 165 102" 
+        fill="none" stroke="url(#pulseGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Glowing Pulse Nodes -->
+  <circle cx="98" cy="62" r="5" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="115" cy="138" r="5" fill="#34d399" filter="url(#glow)"/>
+</svg>

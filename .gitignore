@@ -1,0 +1,20 @@
+# History files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary scratch
+scratch/
+test*

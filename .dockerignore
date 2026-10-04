@@ -1,0 +1,11 @@
+.git
+.gitignore
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.log
+scratch/
+test*
+make_logo.py
+generate_dataset.py
